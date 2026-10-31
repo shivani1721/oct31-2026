@@ -1,6 +1,6 @@
 name: myworkflow1
 on:
-
+  push:
 jobs:
   myjob1:
     runs-on: ubuntu-latest
