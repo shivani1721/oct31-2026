@@ -21,4 +21,6 @@ jobs:
         user: docker/login-action@v3
         with: 
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}  
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: mystep5-push the docker image 
+        run: sudo docker image push shivanipanwar/shivaniimage_oct_31:t2   
