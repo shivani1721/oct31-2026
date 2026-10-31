@@ -10,4 +10,4 @@ jobs:
           whoami
           pwd
           cat /etc/os-release
-          
+          ls -al
