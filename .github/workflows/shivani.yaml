@@ -3,3 +3,6 @@ name: myworkflow1
 
 jobs:
   myjob1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mystep1
