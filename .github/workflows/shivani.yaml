@@ -1,5 +1,5 @@
 name: myworkflow1
-
+on:
 
 jobs:
   myjob1:
