@@ -16,4 +16,9 @@ jobs:
       - name: mystep3-check the source code
         run: ls -al
       - name: mystep4-we are going to build our own docker image 
-        run: sudo docker image build -t shivanipanwar1721/shivaniimage_oct_31:t1 -f Dockerfile .  
+        run: sudo docker image build -t shivanipanwar/shivaniimage_oct_31:t2 -f Dockerfile .
+      - name: login to docker hub 
+        user: docker/login-action@v3
+        with: 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}  
